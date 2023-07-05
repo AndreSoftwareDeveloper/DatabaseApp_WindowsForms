@@ -1,0 +1,39 @@
+CREATE TABLE pojazd (
+  id INT IDENTITY(1,1) PRIMARY KEY,
+  marka VARCHAR(15),
+  model VARCHAR(15) UNIQUE,
+  rejestracja VARCHAR(8) CHECK(LEN(rejestracja)>5),
+  cena MONEY CHECK(cena<=1000) DEFAULT 500,
+  zdjecie IMAGE NULL,
+  klient INT
+);
+
+CREATE TABLE klient (
+  id INT IDENTITY(1,1) PRIMARY KEY,
+  nazwisko VARCHAR(15),
+  imie VARCHAR(10),
+  telefon INT CHECK(telefon<=999999999)
+);
+
+SET ANSI_WARNINGS OFF;
+
+INSERT INTO pojazd(marka, model, rejestracja, cena) VALUES
+('Toyota', 'Yaris Cross', 'GD12345', 300),
+('Kia', 'Ceed', 'CTR78945', 400),
+('Volvo', 'S90', 'GCH88QQVV', 600),
+('Dacia', 'Logan', 'GWE88VV44', 100)
+
+INSERT INTO klient(nazwisko, imie, telefon) VALUES
+('Nowak', 'Jan', 111222333),
+('Corleone', 'Vito', 999888777),
+('Schultz', 'Hans', 444333444),
+('Escobar', 'Pablo', 555777888)
+
+ALTER TABLE pojazd
+ADD FOREIGN KEY (klient) REFERENCES klient(id)
+
+update pojazd set zdjecie=(SELECT BulkColumn FROM OPENROWSET(BULK 'C:\tmp\toyota.jpg', SINGLE_BLOB) a) WHERE id=1
+update pojazd set zdjecie=(SELECT BulkColumn FROM OPENROWSET(BULK 'C:\tmp\toyota.jpg', SINGLE_BLOB) a) WHERE id=2
+update pojazd set zdjecie=(SELECT BulkColumn FROM OPENROWSET(BULK 'C:\tmp\kia.jpg', SINGLE_BLOB) a) WHERE id=3
+update pojazd set zdjecie=(SELECT BulkColumn FROM OPENROWSET(BULK 'C:\tmp\volvo.jpg', SINGLE_BLOB) a) WHERE id=4
+update pojazd set zdjecie=(SELECT BulkColumn FROM OPENROWSET(BULK 'C:\tmp\dacia.jpg', SINGLE_BLOB) a) WHERE id=5

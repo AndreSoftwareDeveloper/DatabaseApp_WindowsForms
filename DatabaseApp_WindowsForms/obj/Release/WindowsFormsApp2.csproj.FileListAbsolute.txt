@@ -1,0 +1,11 @@
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\bin\Release\WindowsFormsApp2.exe.config
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\bin\Release\WindowsFormsApp2.exe
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\bin\Release\WindowsFormsApp2.pdb
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\obj\Release\WindowsFormsApp2.csproj.AssemblyReference.cache
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\obj\Release\WindowsFormsApp2.csproj.SuggestedBindingRedirects.cache
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\obj\Release\WindowsFormsApp2.Form1.resources
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\obj\Release\WindowsFormsApp2.Properties.Resources.resources
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\obj\Release\WindowsFormsApp2.csproj.GenerateResource.cache
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\obj\Release\WindowsFormsApp2.csproj.CoreCompileInputs.cache
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\obj\Release\WindowsFormsApp2.exe
+C:\Users\andri\Downloads\DatabaseApp_WindowsForms\DatabaseApp_WindowsForms\obj\Release\WindowsFormsApp2.pdb
